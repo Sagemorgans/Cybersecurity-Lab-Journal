@@ -1,14 +1,14 @@
 
 **The Goal:** Show you can intercept and analyze real-world traffic.
 
-# Day 02: Man-in-the-Middle (MitM) via ARP Poisoning
+ Man-in-the-Middle (MitM) via ARP Poisoning
 
-##  Objective
+  Objective
 To intercept and analyze traffic between a target host (Ubuntu) and the Gateway (Router) using ARP Cache Poisoning and Wireshark.
 
-##  Technical Execution
+  Technical Execution
 
-### 1. Enabling IP Forwarding
+ 1. Enabling IP Forwarding
 To prevent a Denial of Service (DoS) on the victim, I enabled IPv4 forwarding on the Kali host:
 
 ```bash
