@@ -13,6 +13,7 @@ To intercept and analyze traffic between a target host (Ubuntu) and the Gateway 
 To prevent a Denial of Service (DoS) on the victim, I enabled IPv4 forwarding on the Kali host:
 ```bash
 sudo sysctl -w net.ipv4.ip_forward=1
+
 2. Executing the ARP Spoof
 Initiated a bi-directional attack to position Kali as the "Man-in-the-Middle":
 
