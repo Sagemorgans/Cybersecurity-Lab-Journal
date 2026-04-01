@@ -36,7 +36,7 @@ I monitored the eth0 interface and filtered for the victim's IP.
 3. Observations & Performance Constraints
 
 *Actual Findings:**
-* *successful Interception:* Confirmed that Kali successfully positioned itself in the traffic path, as evidenced by a massive influx of packets in the Wireshark capture window.
+* *successful Interception: Confirmed that Kali successfully positioned itself in the traffic path, as evidenced by a massive influx of packets in the Wireshark capture window.
 * *Hardware Bottleneck:* Encountered significant system latency and "lag" once the ARP spoofing and Wireshark capture were running simultaneously.
 * *Resource Exhaustion:* The overhead of processing real-time network traffic in a virtualized environment led to high CPU/RAM utilization, limiting the ability to perform deep packet inspection (DPI) in this specific session.
 
