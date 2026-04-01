@@ -1,7 +1,7 @@
-Day 01: Virtual Lab Architecture & Provisioning
+ **Virtual Lab Architecture & Provisioning**
 
 Objective
-To establish a secondary, isolated "Sandbox" for security research, ensuring that offensive operations are contained within a **Type-2 Hypervisor** to prevent host-machine contamination.
+To establish a secondary, isolated "Sandbox" for security research, ensuring that offensive operations are contained within a *Type-2 Hypervisor* to prevent host-machine contamination.
 
 Lab Topology
 * *Hypervisor:* VirtualBox 7.x
